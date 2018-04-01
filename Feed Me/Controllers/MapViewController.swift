@@ -12,7 +12,7 @@ class MapViewController: UIViewController {
   private var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant", "food"]
   private let locationManager = CLLocationManager()
   private let dataProvider = GoogleDataProvider()
-  private let searchRadius: Double = 1000
+  private let searchRadius: Double = 3000
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -62,6 +62,23 @@ class MapViewController: UIViewController {
         marker.map = self.mapView
       }
     }
+  }
+  
+  func randomChoice(coordinate: CLLocationCoordinate2D) {
+    mapView.clear()
+    
+    dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
+      places.forEach {
+        let marker = PlaceMarker(place: $0)
+        marker.map = self.mapView
+        self.mapView.selectedMarker = marker
+      }
+    }
+  }
+  
+  @IBAction func randomizerButton(_ sender: Any) {
+    mapCenterPinImage.fadeOut(0.25)
+    randomChoice(coordinate: mapView.camera.target)
   }
   
   @IBAction func refreshPlaces(_ sender: Any) {

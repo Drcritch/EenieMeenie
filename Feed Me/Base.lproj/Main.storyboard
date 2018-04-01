@@ -74,11 +74,18 @@
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" image="filter" id="Y8r-sI-zD8">
-                            <connections>
-                                <segue destination="gRK-9k-5jK" kind="presentation" identifier="Types Segue" id="Glz-Sc-CwV"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="filter" id="Y8r-sI-zD8">
+                                <connections>
+                                    <segue destination="gRK-9k-5jK" kind="presentation" identifier="Types Segue" id="Glz-Sc-CwV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Let him holler where to go." id="TBY-Nl-mpP">
+                                <connections>
+                                    <action selector="randomizerButton:" destination="vXZ-lx-hvc" id="W5s-9F-OP2"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -139,8 +146,7 @@
         <!--View Controller-->
         <scene sceneID="v3e-d7-gsd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xN0-79-tk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="1gl-f7-LYG" sceneMemberID="viewController">
+                <viewController id="1gl-f7-LYG" customClass="ViewController" customModule="Feed_Me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PyQ-f9-UCb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +177,7 @@
                                             <color key="titleColor" red="0.87615376710000004" green="0.25341013070000001" blue="0.025777021420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="MainButtonBot:" destination="1gl-f7-LYG" eventType="touchUpInside" id="tdp-yH-snK"/>
                                             <action selector="random_button:" destination="1gl-f7-LYG" eventType="touchUpInside" id="ja2-vq-R5S"/>
                                             <segue destination="jle-iB-eqV" kind="presentation" id="7gp-fe-sLq"/>
                                         </connections>
@@ -191,7 +198,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wee-h5-ebt"/>
                     </view>
+                    <connections>
+                        <outlet property="EMLogoMid" destination="oA3-6B-mAY" id="bWC-Eg-O0I"/>
+                        <outlet property="EenieMeenieTop" destination="dAT-f2-Ppe" id="CJZ-t1-yqB"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xN0-79-tk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="639" y="26"/>
         </scene>

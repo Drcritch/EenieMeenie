@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E9DAE561BDA80A4009DA461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9DAE551BDA80A4009DA461 /* LaunchScreen.storyboard */; };
 		461E8D992A720145A9E20338 /* Pods_Feed_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A76A998E5BC9094E04A519 /* Pods_Feed_Me.framework */; };
+		A76B456F207141EA004C2DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B456E207141E9004C2DA9 /* ViewController.swift */; };
 		B48F646E19B22EB200710BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F646D19B22EB200710BEB /* AppDelegate.swift */; };
 		B48F647319B22EB200710BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F647119B22EB200710BEB /* Main.storyboard */; };
 		B48F647519B22EB200710BEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F647419B22EB200710BEB /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 		15A76A998E5BC9094E04A519 /* Pods_Feed_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feed_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6504C8534735AC4D678E8A95 /* Pods-Feed Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me.release.xcconfig"; sourceTree = "<group>"; };
 		79140D881E4BB696EB110D2C /* Pods-Feed Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me.debug.xcconfig"; sourceTree = "<group>"; };
+		A76B456E207141E9004C2DA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B48F646819B22EB200710BEB /* Feed Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F646C19B22EB200710BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48F646D19B22EB200710BEB /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		B48F648A19B22EFC00710BEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A76B456E207141E9004C2DA9 /* ViewController.swift */,
 				B48F648D19B22F8700710BEB /* MapViewController.swift */,
 				B48F649B19B22FA500710BEB /* TypesTableViewController.swift */,
 			);
@@ -281,6 +284,7 @@
 				B48F646E19B22EB200710BEB /* AppDelegate.swift in Sources */,
 				B48F649219B22F9400710BEB /* GoogleDataProvider.swift in Sources */,
 				B48F649319B22F9400710BEB /* GooglePlace.swift in Sources */,
+				A76B456F207141EA004C2DA9 /* ViewController.swift in Sources */,
 				E107EBDE1FE1CBA100D29CE8 /* PlaceMarker.swift in Sources */,
 				B48F648E19B22F8700710BEB /* MapViewController.swift in Sources */,
 				B48F649A19B22F9B00710BEB /* UIViewExtension.swift in Sources */,
