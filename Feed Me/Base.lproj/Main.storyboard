@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jle-iB-eqV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gl-f7-LYG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="GeezaPro.ttc">
-            <string>GeezaPro</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-        <array key="HelveticaNeueLights.ttc">
-            <string>HelveticaNeue-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Map View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -35,7 +24,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU2-Pn-A8u">
-                                <rect key="frame" x="0.0" y="602" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="602.5" width="375" height="20.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -62,25 +51,19 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Hq-pz-3QM">
                         <nil key="title"/>
-                        <leftBarButtonItems>
-                            <barButtonItem title="back" id="bPP-gp-fkb">
-                                <connections>
-                                    <segue destination="1gl-f7-LYG" kind="presentation" id="WTh-LY-vHk"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="Sxw-v5-gkF">
-                                <connections>
-                                    <action selector="refreshPlaces:" destination="vXZ-lx-hvc" id="zUr-f1-p4C"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Sxw-v5-gkF">
+                            <connections>
+                                <action selector="refreshPlaces:" destination="vXZ-lx-hvc" id="zUr-f1-p4C"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="filter" id="Y8r-sI-zD8">
                                 <connections>
                                     <segue destination="gRK-9k-5jK" kind="presentation" identifier="Types Segue" id="Glz-Sc-CwV"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Let him holler where to go." id="TBY-Nl-mpP">
+                            <barButtonItem title="Holler where to go           " id="TBY-Nl-mpP">
+                                <color key="tintColor" red="0.99945873019999998" green="0.26741546389999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="randomizerButton:" destination="vXZ-lx-hvc" id="W5s-9F-OP2"/>
                                 </connections>
@@ -154,58 +137,70 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1gT-KJ-6mU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-lO-sct">
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TH-u5-UOI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eeenie Meenie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAT-f2-Ppe">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" red="0.87615376710891724" green="0.25341013073921204" blue="0.025777021422982216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="shadowOffset" width="4" height="4"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_EM" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-6B-mAY">
-                                        <rect key="frame" x="0.0" y="62.5" width="375" height="512"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27K-yf-VAH">
-                                        <rect key="frame" x="0.0" y="574.5" width="375" height="92.5"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="27"/>
-                                        <state key="normal" title="Let Him Holler Where To Go">
-                                            <color key="titleColor" red="0.87615376710000004" green="0.25341013070000001" blue="0.025777021420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="MainButtonBot:" destination="1gl-f7-LYG" eventType="touchUpInside" id="tdp-yH-snK"/>
-                                            <action selector="random_button:" destination="1gl-f7-LYG" eventType="touchUpInside" id="ja2-vq-R5S"/>
-                                            <segue destination="jle-iB-eqV" kind="presentation" id="7gp-fe-sLq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="jle-iB-eqV" kind="presentation" id="Aih-ke-vnU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_EM" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-6B-mAY">
+                                <rect key="frame" x="108" y="481" width="159" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="KWv-gN-EY2"/>
+                                    <constraint firstAttribute="width" constant="159" id="lqF-7S-w4o"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EM_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bW6-51-N5t">
+                                <rect key="frame" x="-62" y="20" width="469" height="321"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="321" id="1be-o5-XxX"/>
+                                    <constraint firstAttribute="width" constant="469" id="iwm-2V-aVf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt; miney mo &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-TV-vEY">
+                                <rect key="frame" x="136" y="436" width="103" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" constant="108" id="1na-GR-T5Z"/>
                             <constraint firstItem="1gT-KJ-6mU" firstAttribute="bottom" secondItem="wee-h5-ebt" secondAttribute="bottom" id="2ti-U4-LDz"/>
-                            <constraint firstItem="fB8-lO-sct" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" id="8gb-s8-XjE"/>
+                            <constraint firstAttribute="trailing" secondItem="bW6-51-N5t" secondAttribute="trailing" constant="-32" id="ADb-xT-toe"/>
+                            <constraint firstItem="bW6-51-N5t" firstAttribute="leading" secondItem="PyQ-f9-UCb" secondAttribute="leading" constant="-62" id="CaB-Ko-ewo"/>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="top" secondItem="E9t-TV-vEY" secondAttribute="bottom" constant="25" id="HLO-fH-EgV"/>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" constant="108" id="KZK-Ty-aLK"/>
+                            <constraint firstItem="1gT-KJ-6mU" firstAttribute="bottom" secondItem="wee-h5-ebt" secondAttribute="bottom" id="Lvk-P6-F4e"/>
                             <constraint firstItem="1gT-KJ-6mU" firstAttribute="top" secondItem="PyQ-f9-UCb" secondAttribute="top" id="Nl4-4g-pdl"/>
-                            <constraint firstItem="fB8-lO-sct" firstAttribute="top" secondItem="PyQ-f9-UCb" secondAttribute="top" id="V8S-CX-mcR"/>
+                            <constraint firstItem="wee-h5-ebt" firstAttribute="trailing" secondItem="oA3-6B-mAY" secondAttribute="trailing" constant="108" id="SbE-US-y6g"/>
+                            <constraint firstItem="wee-h5-ebt" firstAttribute="trailing" secondItem="E9t-TV-vEY" secondAttribute="trailing" constant="136" id="T5l-cf-acv"/>
+                            <constraint firstItem="wee-h5-ebt" firstAttribute="trailing" secondItem="oA3-6B-mAY" secondAttribute="trailing" constant="108" id="VLO-Vn-UIz"/>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="bottom" secondItem="wee-h5-ebt" secondAttribute="bottom" id="axz-my-hLn"/>
+                            <constraint firstItem="1gT-KJ-6mU" firstAttribute="top" secondItem="PyQ-f9-UCb" secondAttribute="top" id="c14-zy-6dj"/>
                             <constraint firstItem="1gT-KJ-6mU" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" id="c5x-Tm-3Vo"/>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" constant="108" id="hSV-kI-sgm"/>
+                            <constraint firstItem="wee-h5-ebt" firstAttribute="trailing" secondItem="oA3-6B-mAY" secondAttribute="trailing" constant="108" id="hca-xo-YoO"/>
+                            <constraint firstItem="1gT-KJ-6mU" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" id="iER-Vw-Go4"/>
+                            <constraint firstItem="oA3-6B-mAY" firstAttribute="bottom" secondItem="wee-h5-ebt" secondAttribute="bottom" id="oEc-TO-2i7"/>
                             <constraint firstItem="1gT-KJ-6mU" firstAttribute="trailing" secondItem="wee-h5-ebt" secondAttribute="trailing" id="pb0-0O-SzZ"/>
-                            <constraint firstItem="wee-h5-ebt" firstAttribute="bottom" secondItem="fB8-lO-sct" secondAttribute="bottom" id="uit-RP-Wrx"/>
-                            <constraint firstAttribute="trailing" secondItem="fB8-lO-sct" secondAttribute="trailing" id="z1g-er-DsA"/>
+                            <constraint firstItem="bW6-51-N5t" firstAttribute="top" secondItem="wee-h5-ebt" secondAttribute="top" id="vuI-Fd-nCq"/>
+                            <constraint firstItem="E9t-TV-vEY" firstAttribute="leading" secondItem="wee-h5-ebt" secondAttribute="leading" constant="136" id="x4Z-eM-fgm"/>
+                            <constraint firstItem="1gT-KJ-6mU" firstAttribute="trailing" secondItem="wee-h5-ebt" secondAttribute="trailing" id="y8z-Sz-6hv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wee-h5-ebt"/>
                     </view>
                     <connections>
                         <outlet property="EMLogoMid" destination="oA3-6B-mAY" id="bWC-Eg-O0I"/>
-                        <outlet property="EenieMeenieTop" destination="dAT-f2-Ppe" id="CJZ-t1-yqB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xN0-79-tk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="26"/>
+            <point key="canvasLocation" x="637.60000000000002" y="25.637181409295355"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UK5-fD-DWn">
@@ -245,6 +240,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="EM_Logo" width="512" height="350"/>
         <image name="filter" width="25" height="25"/>
         <image name="icon_me" width="30" height="55"/>
         <image name="launch_EM" width="512" height="512"/>

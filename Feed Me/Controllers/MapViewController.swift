@@ -12,7 +12,7 @@ class MapViewController: UIViewController {
   private var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant", "food"]
   private let locationManager = CLLocationManager()
   private let dataProvider = GoogleDataProvider()
-  private let searchRadius: Double = 3000
+  private let searchRadius: Double = 1000
   
   override func viewDidLoad() {
     super.viewDidLoad()
