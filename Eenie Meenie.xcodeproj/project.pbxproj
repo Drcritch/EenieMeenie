@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0E9DAE561BDA80A4009DA461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9DAE551BDA80A4009DA461 /* LaunchScreen.storyboard */; };
-		461E8D992A720145A9E20338 /* Pods_Feed_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A76A998E5BC9094E04A519 /* Pods_Feed_Me.framework */; };
+		461E8D992A720145A9E20338 /* Feed_Me_Completed copy in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A76A998E5BC9094E04A519 /* Feed_Me_Completed copy */; };
+		494D6CF467D3EB3EFA83829B /* Feed_Me_Completed copy in Frameworks */ = {isa = PBXBuildFile; fileRef = 21067CD2EB76023AE3AA7DE9 /* Feed_Me_Completed copy */; };
 		A76B456F207141EA004C2DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B456E207141E9004C2DA9 /* ViewController.swift */; };
 		A76B4572207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */; };
 		A76B4573207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */; };
+		A7A5BB0B208150F400B96A87 /* loadscreen_eenie.png in Resources */ = {isa = PBXBuildFile; fileRef = A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */; };
 		B48F646E19B22EB200710BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F646D19B22EB200710BEB /* AppDelegate.swift */; };
 		B48F647319B22EB200710BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F647119B22EB200710BEB /* Main.storyboard */; };
 		B48F647519B22EB200710BEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F647419B22EB200710BEB /* Images.xcassets */; };
@@ -26,14 +28,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0604FADD59AAE311798EFBFE /* Pods-Eenie Meenie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eenie Meenie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie.release.xcconfig"; sourceTree = "<group>"; };
 		0E9DAE551BDA80A4009DA461 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		15A76A998E5BC9094E04A519 /* Pods_Feed_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feed_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6504C8534735AC4D678E8A95 /* Pods-Feed Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me.release.xcconfig"; sourceTree = "<group>"; };
-		79140D881E4BB696EB110D2C /* Pods-Feed Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed Me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me.debug.xcconfig"; sourceTree = "<group>"; };
+		15A76A998E5BC9094E04A519 /* Feed_Me_Completed copy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Feed_Me_Completed copy"; path = "../../../../../../../../Desktop/Feed_Me_Completed copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21067CD2EB76023AE3AA7DE9 /* Feed_Me_Completed copy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Feed_Me_Completed copy"; path = "../../../../../../../../Desktop/Feed_Me_Completed copy"; sourceTree = BUILT_PRODUCTS_DIR; };
+		284A41028A4FAB5270283B88 /* Pods-Eenie Meenie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eenie Meenie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie.debug.xcconfig"; sourceTree = "<group>"; };
+		6504C8534735AC4D678E8A95 /* Pods-Eenie Meenie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eenie Meenie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie.release.xcconfig"; sourceTree = "<group>"; };
+		79140D881E4BB696EB110D2C /* Pods-Eenie Meenie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eenie Meenie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie.debug.xcconfig"; sourceTree = "<group>"; };
 		A76B456E207141E9004C2DA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full_EENIE_MEENIE_Final_black.png; path = ../../../Downloads/Full_EENIE_MEENIE_Final_black.png; sourceTree = "<group>"; };
 		A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full_EENIE_MEENIE_Final.png; path = ../../../Downloads/Full_EENIE_MEENIE_Final.png; sourceTree = "<group>"; };
-		B48F646819B22EB200710BEB /* Feed Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loadscreen_eenie.png; path = ../../../../Downloads/loadscreen_eenie.png; sourceTree = "<group>"; };
+		A7A5BB0C208150FA00B96A87 /* loadscreen_eenie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadscreen_eenie.png; sourceTree = "<group>"; };
+		B48F646819B22EB200710BEB /* Feed_Me_Completed copy */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Feed_Me_Completed copy"; path = "../../../../../../../../Desktop/Feed_Me_Completed copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F646C19B22EB200710BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48F646D19B22EB200710BEB /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48F647219B22EB200710BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				461E8D992A720145A9E20338 /* Pods_Feed_Me.framework in Frameworks */,
+				461E8D992A720145A9E20338 /* Feed_Me_Completed copy in Frameworks */,
+				494D6CF467D3EB3EFA83829B /* Feed_Me_Completed copy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +82,7 @@
 		B48F646919B22EB200710BEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B48F646819B22EB200710BEB /* Feed Me.app */,
+				B48F646819B22EB200710BEB /* Feed_Me_Completed copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 				B48F647119B22EB200710BEB /* Main.storyboard */,
 				0E9DAE551BDA80A4009DA461 /* LaunchScreen.storyboard */,
 				B48F647419B22EB200710BEB /* Images.xcassets */,
+				A7A5BB0C208150FA00B96A87 /* loadscreen_eenie.png */,
 				A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */,
 				A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */,
 				B48F646B19B22EB200710BEB /* Supporting Files */,
@@ -109,6 +118,7 @@
 			children = (
 				A76B456E207141E9004C2DA9 /* ViewController.swift */,
 				B48F648D19B22F8700710BEB /* MapViewController.swift */,
+				A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */,
 				B48F649B19B22FA500710BEB /* TypesTableViewController.swift */,
 			);
 			path = Controllers;
@@ -137,7 +147,8 @@
 		B48F649D19B231D500710BEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15A76A998E5BC9094E04A519 /* Pods_Feed_Me.framework */,
+				15A76A998E5BC9094E04A519 /* Feed_Me_Completed copy */,
+				21067CD2EB76023AE3AA7DE9 /* Feed_Me_Completed copy */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -145,8 +156,10 @@
 		FAEABCE5C3556E0EA82AC713 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79140D881E4BB696EB110D2C /* Pods-Feed Me.debug.xcconfig */,
-				6504C8534735AC4D678E8A95 /* Pods-Feed Me.release.xcconfig */,
+				79140D881E4BB696EB110D2C /* Pods-Eenie Meenie.debug.xcconfig */,
+				6504C8534735AC4D678E8A95 /* Pods-Eenie Meenie.release.xcconfig */,
+				284A41028A4FAB5270283B88 /* Pods-Eenie Meenie.debug.xcconfig */,
+				0604FADD59AAE311798EFBFE /* Pods-Eenie Meenie.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,24 +167,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B48F646719B22EB200710BEB /* Feed Me */ = {
+		B48F646719B22EB200710BEB /* Eenie Meenie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B48F648419B22EB200710BEB /* Build configuration list for PBXNativeTarget "Feed Me" */;
+			buildConfigurationList = B48F648419B22EB200710BEB /* Build configuration list for PBXNativeTarget "Eenie Meenie" */;
 			buildPhases = (
 				606B2440DF27CF36976B9B50 /* [CP] Check Pods Manifest.lock */,
 				B48F646419B22EB200710BEB /* Sources */,
 				B48F646519B22EB200710BEB /* Frameworks */,
 				B48F646619B22EB200710BEB /* Resources */,
-				BD2115DE22EEDA8CF18C6432 /* [CP] Embed Pods Frameworks */,
-				821595B51BB1DDD9ED9F815F /* [CP] Copy Pods Resources */,
+				48E53559678E88E5CB2878B9 /* [CP] Embed Pods Frameworks */,
+				07A2BF96659273EF42A05F5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Feed Me";
+			name = "Eenie Meenie";
 			productName = "Feed Me";
-			productReference = B48F646819B22EB200710BEB /* Feed Me.app */;
+			productReference = B48F646819B22EB200710BEB /* Feed_Me_Completed copy */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +195,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					B48F646719B22EB200710BEB = {
@@ -191,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B48F646319B22EB200710BEB /* Build configuration list for PBXProject "Feed Me" */;
+			buildConfigurationList = B48F646319B22EB200710BEB /* Build configuration list for PBXProject "Eenie Meenie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B48F646719B22EB200710BEB /* Feed Me */,
+				B48F646719B22EB200710BEB /* Eenie Meenie */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +230,7 @@
 				A76B4572207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final_black.png in Resources */,
 				A76B4573207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final.png in Resources */,
 				B48F647319B22EB200710BEB /* Main.storyboard in Resources */,
+				A7A5BB0B208150F400B96A87 /* loadscreen_eenie.png in Resources */,
 				0E9DAE561BDA80A4009DA461 /* LaunchScreen.storyboard in Resources */,
 				B48F649919B22F9B00710BEB /* MarkerInfoView.xib in Resources */,
 				B48F647519B22EB200710BEB /* Images.xcassets in Resources */,
@@ -226,6 +240,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07A2BF96659273EF42A05F5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E53559678E88E5CB2878B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eenie Meenie/Pods-Eenie Meenie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		606B2440DF27CF36976B9B50 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -237,49 +289,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Feed Me-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Eenie Meenie-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		821595B51BB1DDD9ED9F815F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD2115DE22EEDA8CF18C6432 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feed Me/Pods-Feed Me-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -327,12 +341,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -379,12 +395,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -414,7 +432,7 @@
 		};
 		B48F648519B22EB200710BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79140D881E4BB696EB110D2C /* Pods-Feed Me.debug.xcconfig */;
+			baseConfigurationReference = 284A41028A4FAB5270283B88 /* Pods-Eenie Meenie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3K996QRN7;
@@ -433,7 +451,7 @@
 		};
 		B48F648619B22EB200710BEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6504C8534735AC4D678E8A95 /* Pods-Feed Me.release.xcconfig */;
+			baseConfigurationReference = 0604FADD59AAE311798EFBFE /* Pods-Eenie Meenie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3K996QRN7;
@@ -453,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B48F646319B22EB200710BEB /* Build configuration list for PBXProject "Feed Me" */ = {
+		B48F646319B22EB200710BEB /* Build configuration list for PBXProject "Eenie Meenie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B48F648219B22EB200710BEB /* Debug */,
@@ -462,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B48F648419B22EB200710BEB /* Build configuration list for PBXNativeTarget "Feed Me" */ = {
+		B48F648419B22EB200710BEB /* Build configuration list for PBXNativeTarget "Eenie Meenie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B48F648519B22EB200710BEB /* Debug */,

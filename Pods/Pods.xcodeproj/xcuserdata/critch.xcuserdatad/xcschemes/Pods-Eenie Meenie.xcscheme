@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D0922D6BF42EFC5679D22CEC8061DABE"
-               BuildableName = "Pods_Feed_Me.framework"
-               BlueprintName = "Pods-Feed Me"
+               BlueprintIdentifier = "3225D22E8422FBBFE26377E59EF129AF"
+               BuildableName = "Pods_Eenie_Meenie.framework"
+               BlueprintName = "Pods-Eenie Meenie"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D0922D6BF42EFC5679D22CEC8061DABE"
-            BuildableName = "Pods_Feed_Me.framework"
-            BlueprintName = "Pods-Feed Me"
+            BlueprintIdentifier = "3225D22E8422FBBFE26377E59EF129AF"
+            BuildableName = "Pods_Eenie_Meenie.framework"
+            BlueprintName = "Pods-Eenie Meenie"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

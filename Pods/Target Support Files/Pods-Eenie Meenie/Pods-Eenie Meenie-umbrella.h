@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Feed_MeVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Feed_MeVersionString[];
+FOUNDATION_EXPORT double Pods_Eenie_MeenieVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Eenie_MeenieVersionString[];
 
