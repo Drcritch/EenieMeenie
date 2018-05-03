@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_bg" translatesAutoresizingMaskIntoConstraints="NO" id="iFp-5V-xQc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launch_bg" translatesAutoresizingMaskIntoConstraints="NO" id="iFp-5V-xQc">
+                                <rect key="frame" x="0.0" y="-437" width="1104" height="1104"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="KZg-og-dEF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -28,6 +31,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iFp-5V-xQc" secondAttribute="trailing" id="51L-TK-JOe"/>
                             <constraint firstAttribute="bottom" secondItem="iFp-5V-xQc" secondAttribute="bottom" id="7sN-R1-MoB"/>
+                            <constraint firstAttribute="trailing" secondItem="KZg-og-dEF" secondAttribute="trailing" id="M4Y-fB-crP"/>
+                            <constraint firstItem="KZg-og-dEF" firstAttribute="top" secondItem="Vex-hV-UZb" secondAttribute="top" id="SOc-wO-iTC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KZg-og-dEF" secondAttribute="bottom" id="TxT-c4-vcI"/>
+                            <constraint firstItem="KZg-og-dEF" firstAttribute="leading" secondItem="Vex-hV-UZb" secondAttribute="leading" id="YKs-xM-FSu"/>
                             <constraint firstItem="iFp-5V-xQc" firstAttribute="leading" secondItem="Vex-hV-UZb" secondAttribute="leading" id="d47-Xe-mtm"/>
                             <constraint firstItem="iFp-5V-xQc" firstAttribute="top" secondItem="Vex-hV-UZb" secondAttribute="top" id="v8P-8Z-FIH"/>
                         </constraints>
@@ -39,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launch" width="375" height="667"/>
         <image name="launch_bg" width="1104" height="1104"/>
     </resources>
 </document>

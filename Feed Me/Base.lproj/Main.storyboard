@@ -51,11 +51,18 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Hq-pz-3QM">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Sxw-v5-gkF">
-                            <connections>
-                                <action selector="refreshPlaces:" destination="vXZ-lx-hvc" id="zUr-f1-p4C"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="refresh" id="Sxw-v5-gkF">
+                                <connections>
+                                    <action selector="refreshPlaces:" destination="vXZ-lx-hvc" id="zUr-f1-p4C"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="Hmt-pj-eBW">
+                                <connections>
+                                    <action selector="searchRadiusButton:" destination="vXZ-lx-hvc" id="mqN-Xt-06l"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem image="filter" id="Y8r-sI-zD8">
                                 <connections>

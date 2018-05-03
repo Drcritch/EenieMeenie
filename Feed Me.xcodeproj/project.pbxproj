@@ -12,6 +12,7 @@
 		A76B456F207141EA004C2DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76B456E207141E9004C2DA9 /* ViewController.swift */; };
 		A76B4572207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */; };
 		A76B4573207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */; };
+		A7A5BB0B208150F400B96A87 /* loadscreen_eenie.png in Resources */ = {isa = PBXBuildFile; fileRef = A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */; };
 		B48F646E19B22EB200710BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F646D19B22EB200710BEB /* AppDelegate.swift */; };
 		B48F647319B22EB200710BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F647119B22EB200710BEB /* Main.storyboard */; };
 		B48F647519B22EB200710BEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F647419B22EB200710BEB /* Images.xcassets */; };
@@ -33,6 +34,8 @@
 		A76B456E207141E9004C2DA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full_EENIE_MEENIE_Final_black.png; path = ../../../Downloads/Full_EENIE_MEENIE_Final_black.png; sourceTree = "<group>"; };
 		A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Full_EENIE_MEENIE_Final.png; path = ../../../Downloads/Full_EENIE_MEENIE_Final.png; sourceTree = "<group>"; };
+		A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loadscreen_eenie.png; path = ../../../../Downloads/loadscreen_eenie.png; sourceTree = "<group>"; };
+		A7A5BB0C208150FA00B96A87 /* loadscreen_eenie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadscreen_eenie.png; sourceTree = "<group>"; };
 		B48F646819B22EB200710BEB /* Feed Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F646C19B22EB200710BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48F646D19B22EB200710BEB /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 				B48F647119B22EB200710BEB /* Main.storyboard */,
 				0E9DAE551BDA80A4009DA461 /* LaunchScreen.storyboard */,
 				B48F647419B22EB200710BEB /* Images.xcassets */,
+				A7A5BB0C208150FA00B96A87 /* loadscreen_eenie.png */,
 				A76B4570207EAC94004C2DA9 /* Full_EENIE_MEENIE_Final_black.png */,
 				A76B4571207EAC95004C2DA9 /* Full_EENIE_MEENIE_Final.png */,
 				B48F646B19B22EB200710BEB /* Supporting Files */,
@@ -109,6 +113,7 @@
 			children = (
 				A76B456E207141E9004C2DA9 /* ViewController.swift */,
 				B48F648D19B22F8700710BEB /* MapViewController.swift */,
+				A7A5BB0A208150F400B96A87 /* loadscreen_eenie.png */,
 				B48F649B19B22FA500710BEB /* TypesTableViewController.swift */,
 			);
 			path = Controllers;
@@ -182,7 +187,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					B48F646719B22EB200710BEB = {
@@ -217,6 +222,7 @@
 				A76B4572207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final_black.png in Resources */,
 				A76B4573207EAC97004C2DA9 /* Full_EENIE_MEENIE_Final.png in Resources */,
 				B48F647319B22EB200710BEB /* Main.storyboard in Resources */,
+				A7A5BB0B208150F400B96A87 /* loadscreen_eenie.png in Resources */,
 				0E9DAE561BDA80A4009DA461 /* LaunchScreen.storyboard in Resources */,
 				B48F649919B22F9B00710BEB /* MarkerInfoView.xib in Resources */,
 				B48F647519B22EB200710BEB /* Images.xcassets in Resources */,
@@ -327,12 +333,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -379,12 +387,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
