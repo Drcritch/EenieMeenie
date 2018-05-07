@@ -1,5 +1,6 @@
 
 import UIKit
+import GooglePlaces
 import GoogleMaps
 
 class PlaceMarker: GMSMarker {

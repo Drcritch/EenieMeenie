@@ -1,6 +1,7 @@
 
 
 import UIKit
+import GooglePlaces
 import Foundation
 import CoreLocation
 import SwiftyJSON

@@ -4,7 +4,13 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController {
-  
+   
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    
+    @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet var searchRadiusView: UIView!
   @IBOutlet weak var addressLabel: UILabel!
   @IBOutlet weak var mapView: GMSMapView!
   @IBOutlet private weak var mapCenterPinImage: UIImageView!
@@ -14,16 +20,72 @@ class MapViewController: UIViewController {
     private var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant", "food"]
   private let locationManager = CLLocationManager()
   private let dataProvider = GoogleDataProvider()
-  private let searchRadius: Double = 1000
+  private var searchRadius: Double = 1600 //in meters
   
   override func viewDidLoad() {
     super.viewDidLoad()
     locationManager.delegate = self
     locationManager.requestWhenInUseAuthorization()
     mapView.delegate = self
+
+    
+    searchRadiusView.layer.cornerRadius = 5
+    doneButton.layer.cornerRadius = 5
+    
+    
+  }
+    
+    @IBAction func changeRadius(_ sender: UISlider) {
+      slider.value = roundf(slider.value)
+      if (slider.value == 1) { searchRadius = 800} //1/2 mile
+      else if(slider.value == 2) {searchRadius = 1600} // 1 mile
+      else if(slider.value == 3) {searchRadius = 3200} // 2 mile
+      else if(slider.value == 4) {searchRadius = 8000} // 5 mile
+      else if(slider.value == 5) {searchRadius = 16000} // 10 mile
+      
+      fetchNearbyPlaces(coordinate: mapView.camera.target) // refresh labels
+      
+    }
+    
+    
+    
+    
+  func animateIn() {
+    self.view.addSubview(searchRadiusView)
+    searchRadiusView.center = self.view.center
+    
+    searchRadiusView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+    searchRadiusView.alpha = 0
+    
+    UIView.animate(withDuration: 0.4) {
+      self.searchRadiusView.alpha = 1
+      self.searchRadiusView.transform = CGAffineTransform.identity
+      
+    }
     
   }
   
+  func animateOut() {
+    UIView.animate(withDuration: 0.3, animations: {
+      self.searchRadiusView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+      self.searchRadiusView.alpha = 0
+      
+      
+    }) { (success:Bool) in
+      self.searchRadiusView.removeFromSuperview()
+    }
+
+  
+  }
+    @IBAction func addItem(_ sender: Any) {
+      animateIn()
+    }
+  
+  
+    @IBAction func dismissPopUp(_ sender: Any) {
+      animateOut()
+    }
+    
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     guard let navigationController = segue.destination as? UINavigationController,
       let controller = navigationController.topViewController as? TypesTableViewController else {
